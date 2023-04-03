@@ -10,7 +10,7 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 const mongoUrl =
-  process.env.MONGO_URL || "mongodb://127.0.0.1/final-project-user";
+  process.env.MONGO_URL || "mongodb://0.0.0.0/final-project-user";
 
 mongoose.set("strictQuery", false);
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true });
